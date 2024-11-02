@@ -391,8 +391,9 @@ label input[type="checkbox"] {
 }
 
 .close-button {
-  width: 70vw; 
-  margin-bottom: 232px;
+  width: 70vw;
+  margin-top: 74px; 
+  margin-bottom: 46px;
 }
 
 .footer {
