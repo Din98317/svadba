@@ -416,7 +416,7 @@ label input[type="checkbox"] {
 }
 
 .dress-code::after, .prompt__section:after, .location__section:after {
-  content: " ";
+  content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -430,7 +430,7 @@ label input[type="checkbox"] {
 }
 
 .timing__section::after {
-  content: " ";
+  content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -454,15 +454,6 @@ label input[type="checkbox"] {
 .city_card {
   margin-top: 50px;
 }
-
-/* .dialog {
-  width: 100%;
-  background-image: url(../images/ring.jpg);
-  background-size: cover;
-  background-position: center;
-  transition: opacity 2s ease-in-out;
-  border: none;
-} */
 
 /* .slider {
   -webkit-appearance: none;
