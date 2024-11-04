@@ -1,3 +1,7 @@
+body {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+}
 
 *,
 *::before,
@@ -6,9 +10,9 @@
 }
 
 body {
+  margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
 }
 
 h1,
@@ -19,9 +23,8 @@ h5,
 h6,
 p {
   margin: 0;
-  text-align: center;
   color: #000;
-
+  text-align: center;
 }
 
 ul {

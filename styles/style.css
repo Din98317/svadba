@@ -6,13 +6,24 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
 dialog {
   width: 100%;
-    border: none;
-    background-image: url(../images/ring.jpg);
-    background-position: center;
-    background-size: cover;
-    transition: opacity 2s ease-in-out;
+  border: none;
+  background-image: url(../images/ring.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: opacity 2s ease-in-out;
 }
 
 dialog::backdrop {
@@ -36,15 +47,14 @@ dialog::backdrop {
 .dialog__title {
   display: flex;
   flex-direction: column;
-  font-family: var( --font-text);
+  font-family: var(--font-text);
 }
 
 .title__span {
-  font-family: var( --font-text);
+  font-family: var(--font-text);
   font-weight: 800;
   font-size: 40px;
 }
-
 
 .header {
   display: flex;
@@ -86,17 +96,6 @@ dialog::backdrop {
   font-size: 40px;
 }
 
-.bgvideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  width: auto;
-  min-width: 100%;
-  height: auto;
-  min-height: 100%;
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -120,6 +119,25 @@ dialog::backdrop {
   text-align: center;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-inline: 26px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.timing__section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  background-color: #fff;
+}
+
 .timing__title {
   margin-block-start: 30px;
 }
@@ -133,16 +151,6 @@ dialog::backdrop {
   opacity: 1;
   transition: all 1.5s;
   transform: translateY(0%);
-}
-
-
-.description {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-inline: 26px;
-  font-size: 16px;
-  text-align: center;
 }
 
 .timing__container {
@@ -159,6 +167,26 @@ dialog::backdrop {
   font-size: 16px;
 }
 
+.dress-code::after,
+.prompt__section:after,
+.location__section:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.dress-code {
+  display: flex;
+  align-items: center;
+}
+
+.dress__code-title {
+  margin-block-start: 30px;
+}
+
 .color__container {
   margin-inline: 27px;
 }
@@ -172,6 +200,10 @@ dialog::backdrop {
   margin-block-end: 60px;
 }
 
+.image__card {
+  flex-grow: 1;
+}
+
 .image {
   width: 100px;
   height: 170px;
@@ -180,16 +212,16 @@ dialog::backdrop {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.prompt__section {
+  position: relative;
+}
+
 .prompt__card-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-inline: 12px;
   margin-block-end: 60px;
-}
-
-.prompt__section {
-  position: relative;
 }
 
 .prompt__card {
@@ -229,6 +261,14 @@ dialog::backdrop {
 
 .number {
   text-underline-position: under;
+}
+
+.location__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-inline: 10px;
+  margin-block-end: 60px;
 }
 
 .location__title {
@@ -286,14 +326,14 @@ dialog::backdrop {
   transform: scale(1.1);
 }
 
-fieldset {
-  border: none;
-}
-
 #sendText {
   display: block;
   color: green;
   text-align: center;
+}
+
+fieldset {
+  border: none;
 }
 
 .guests {
@@ -323,6 +363,12 @@ label {
   background-color: transparent;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .options {
   position: relative;
   width: 350px;
@@ -341,9 +387,9 @@ label {
   appearance: none;
 }
 
-.search__form {
+.alcohol__list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -354,6 +400,12 @@ label input[type="checkbox"] {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .checkbox + .pseudo-checkbox {
@@ -374,12 +426,6 @@ label input[type="checkbox"] {
   background-color: #000;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
 .button {
   align-self: center;
   width: 200px;
@@ -391,7 +437,7 @@ label input[type="checkbox"] {
 
 .close-button {
   width: 70vw;
-  margin-top: 74px; 
+  margin-top: 74px;
   margin-bottom: 46px;
 }
 
@@ -403,125 +449,12 @@ label input[type="checkbox"] {
 .footer__title {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
   color: var(--title-color);
   font-family: var(--font-text);
   font-weight: 600;
-  margin-top: 25px;
-}
-
-.alcohol__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.dress-code::after, .prompt__section:after, .location__section:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-
-.dress-code {
-  display: flex;
-  align-items: center;
-}
-
-.timing__section::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  opacity: 30%;
-  background-color: #fff;
-}
-
-.image__card {
-  flex-grow: 1;
-}
-
-.location__container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-inline: 10px;
-  margin-block-end: 60px;
 }
 
 .city_card {
   margin-top: 50px;
-}
-
-/* .slider {
-  -webkit-appearance: none;
-  width: 50%;
-  min-width: 600px;  /*эта строка нужна только чтобы не ломалось отображение в сниппете*/
-  /* background-color: transparent;
-
-  pointer-events: none;
-}
-
-.slider:focus {
-  outline: none;
-}
-
-.slider::-webkit-slider-thumb {
-  background: #ecf0f1;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 100px;
-  aspect-ratio: 1;
-  -webkit-appearance: none;
-
-  pointer-events: all;
-}
-
-.slider::before {
-  content: '';
-  position: relative;
-  display: block;
-  width: 100px;
-  aspect-ratio: 1;
-
-  border-radius: 50%;
-
-  transform: translate(100px, 0);
-
-  background-color: #333;
-
-  z-index: -1;
-}
-
-.slider::after {
-  content: '';
-  position: relative;
-  display: block;
-  width: 100px;
-  aspect-ratio: 1;
-
-  border-radius: 50%;
-
-  transform: translate(-100px, 0);
-
-  background-color: #333;
-  outline: 1px solid #3ea;
-
-  z-index: -1;
-} */ 
-
-
-.slide-in-from-right {
-  animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
