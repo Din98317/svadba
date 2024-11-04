@@ -292,7 +292,6 @@ fieldset {
 
 #sendText {
   display: block;
-  margin-top: 15px;
   color: green;
   text-align: center;
 }
@@ -407,6 +406,7 @@ label input[type="checkbox"] {
   color: var(--title-color);
   font-family: var(--font-text);
   font-weight: 600;
+  margin-top: 25px;
 }
 
 .alcohol__list {
@@ -511,3 +511,17 @@ label input[type="checkbox"] {
 
   z-index: -1;
 } */ 
+
+
+.slide-in-from-right {
+  animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
