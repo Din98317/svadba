@@ -153,6 +153,11 @@ dialog::backdrop {
   transform: translateY(0%);
 }
 
+.element-animation.element-show.singl::after {
+  transition:2s;
+  right: -20%;
+}
+
 .timing__container {
   display: flex;
   flex-direction: column;
