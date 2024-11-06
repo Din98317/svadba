@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/script.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -303,7 +302,7 @@
         <form action="#" class="rsvp" name="submit-to-google-sheet">
           <label class="form" for="name"
             >Ваши имя и фамилия:
-            <input class="block" type="text" name="name" id="name" required />
+            <input class="block" type="text" name="name" id="name" autocomplete="username" required />
           </label>
           <label class="partner form" for="attending"
             >Планируете ли присутствовать?
@@ -314,7 +313,7 @@
           </label>
           <label class="phone form" for="phone"
             >Телефон:
-            <input class="block" type="tel" name="phone" id="phone" required />
+            <input class="block" type="tel" name="phone" id="phone" autocomplete="tel" required />
           </label>
           <label class="partner form" for="partner"
             >Сколько вас будет человек:
@@ -436,12 +435,12 @@
           .catch((error) => console.error("Ошибка", error.message));
       });
     </script>
-    <script src="./styles/script.js"></script>
     <!-- скрипт для скролла вверх -->
     <script type="text/javascript">
       window.onbeforeunload = function () {
         window.scrollTo(0, 0);
       };
     </script>
+    <script src="./styles/script.js"></script>
   </body>
 </html>

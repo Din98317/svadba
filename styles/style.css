@@ -168,8 +168,8 @@ dialog::backdrop {
 }
 
 .dress-code::after,
-.prompt__section:after,
-.location__section:after {
+.prompt__section::after,
+.location__section::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -289,6 +289,10 @@ dialog::backdrop {
   font-weight: 400;
   font-size: 15px;
   text-align: left;
+}
+
+.city_card {
+  margin-top: 50px;
 }
 
 .rsvp {
@@ -453,8 +457,4 @@ label input[type="checkbox"] {
   color: var(--title-color);
   font-family: var(--font-text);
   font-weight: 600;
-}
-
-.city_card {
-  margin-top: 50px;
 }
