@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "AlayaRozaDemo";
+    src: url("./AlayaRozaDemo.woff2") format("woff2"),
+      url("./AlayaRozaDemo.woff") format("woff");
+}
+@font-face {
+    font-family: "Antarctic";
+    src: url("./Antarctic.woff2") format("woff2"),
+      url("./Antarctic.woff") format("woff");
+}
+@font-face {
+    font-family: "Caravan";
+    src: url("./Caravan.woff2") format("woff2"),
+      url("./Caravan.woff") format("woff");
+}
+@font-face {
+    font-family: "ClassicaOne";
+    src: url("./ClassicaOne.woff2") format("woff2"),
+      url("./ClassicaOne.woff") format("woff");
+}
+@font-face {
+    font-family: "ClassicaTwo";
+    src: url("./ClassicaTwo.woff2") format("woff2"),
+      url("./ClassicaTwo.woff") format("woff");
+}
+@font-face {
+    font-family: "Felidae-Regular";
+    src: url("./Felidae-Regular.woff2") format("woff2"),
+      url("./Felidae-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Floriselscript-Thin";
+    src: url("./Floriselscript-Thin.woff2") format("woff2"),
+      url("./Floriselscript-Thin.woff") format("woff");
+}
+@font-face {
+    font-family: "FrenchKissKGscript-Regular";
+    src: url("./FrenchKissKGscript-Regular.woff2") format("woff2"),
+      url("./FrenchKissKGscript-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Lastochka";
+    src: url("./Lastochka.woff2") format("woff2"),
+      url("./Lastochka.woff") format("woff");
+}
+@font-face {
+    font-family: "Miss_Katherine_symbols-Regular";
+    src: url("./Miss_Katherine_symbols-Regular.woff2") format("woff2"),
+      url("./Miss_Katherine_symbols-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Sacramento-Regular";
+    src: url("./Sacramento-Regular.woff2") format("woff2"),
+      url("./Sacramento-Regular.woff") format("woff");
+      
+}
