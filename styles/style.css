@@ -376,6 +376,13 @@ dialog::backdrop {
   text-align: center;
 }
 
+#sendText p {
+  display: block;
+  color: green;
+  text-align: center;
+}
+
+
 fieldset {
   border: none;
 }

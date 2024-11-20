@@ -545,10 +545,10 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            sendText.innerHTML = "Спасибо за ваш ответ!";
+            sendText.innerHTML = "<p>Спасибо за ваш ответ!</p><p>Будем вас ждать  &#9829</p>";
             setTimeout(function () {
               sendText.innerHTML = "";
-            }, 1000);
+            }, 6000);
             form.reset();
           })
           .catch((error) => console.error("Ошибка", error.message));
