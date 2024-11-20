@@ -605,15 +605,17 @@ td:hover {
 
 div#tekst_sverhu_kartinki {
   position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 428px;
-  margin-bottom: 20px;
-  background: url(../images/zags.webp), lightgray;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 428px;
+    margin-bottom: 20px;
+    background: url(../images/zags.webp), lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .image__building {
@@ -649,15 +651,18 @@ div#tekst_sverhu_kartinki {
 
 div#tekst_sverhu_kartinki__two {
   position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 466px;
-  margin: auto;
-  background: url(../images/building.webp), lightgray;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 466px;
+    margin: auto;
+    background: url(../images/building.webp), lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tekst_sverhu_kartinki__two {
