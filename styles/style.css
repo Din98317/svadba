@@ -742,8 +742,8 @@ div.fixedbut:hover {
 }
 
 .volume-control {
-  align-items: center; /* Центрируем по вертикали */
   margin-top: 20px;
+  margin-right: 12px;
 }
 
 .volume-control p {
