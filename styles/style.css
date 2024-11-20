@@ -49,7 +49,6 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   font-family: var(--font-text);
-  margin-top: 66px;
 }
 
 .title__span {
@@ -383,7 +382,6 @@ dialog::backdrop {
   color: green;
   text-align: center;
 }
-
 
 fieldset {
   border: none;
@@ -851,9 +849,9 @@ div.fixedbut:hover {
 }
 
 .chat__bottom {
-  margin-bottom: 40px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 /* тайминги */
@@ -959,11 +957,11 @@ div.fixedbut:hover {
 
 .countdown-container {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
   background-image: url(../images/timer.jpg);
   background-position: center;
   background-size: cover;
@@ -993,20 +991,20 @@ div.fixedbut:hover {
 }
 
 .timer-title {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 60px;
   font-family: "Great Vibes", sans-serif;
   font-weight: 400;
   font-size: 32px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-block-end: 60px;
   mix-blend-mode: hard-light;
-
 }
 
-.timer-title h2, .timer-title p {
-  mix-blend-mode: hard-light;
+.timer-title h2,
+.timer-title p {
   color: white;
+  mix-blend-mode: hard-light;
 }
 
 .countdown-timer {
@@ -1014,22 +1012,21 @@ div.fixedbut:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
 }
 
 .time-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   margin: 0 10px; /* Расстояние между 
   блоками времени */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
   color: #fff;
 }
 
 .time-number {
-  font-size: 30px;
   color: white;
+  font-size: 30px;
 }
 
 .label {
@@ -1038,13 +1035,13 @@ div.fixedbut:hover {
 }
 
 .divider {
-  height: 30px; /* Высота полоски, может быть изменена */
-  width: 2px; /* Ширина полоски */
-  background-color: #ccc; /* Цвет полоски */
   align-self: center; /* Выравнивание по центру по высоте */
+  width: 2px; /* Ширина полоски */
+  height: 30px; /* Высота полоски, может быть изменена */
+  background-color: #ccc; /* Цвет полоски */
 }
 
 .timer-block {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
