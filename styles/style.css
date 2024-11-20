@@ -18,6 +18,7 @@ body:has(dialog[open]) {
 }
 
 dialog {
+  bottom: 0px;
   width: 100%;
   border: none;
   background-image: url(../images/ring.jpg);
@@ -77,6 +78,7 @@ dialog::backdrop {
 .header__title-name {
   display: flex;
   flex-direction: column;
+  margin-bottom: 125px;
   color: var(--title-color);
   font-family: var(--font-text);
   font-weight: 400;
@@ -113,9 +115,9 @@ dialog::backdrop {
 
 .title {
   margin-block-start: 100px;
-  font-family: var(--font-family);
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 83px;
   text-align: center;
 }
 
@@ -124,11 +126,16 @@ dialog::backdrop {
   flex-direction: column;
   gap: 30px;
   margin-inline: 26px;
-  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 17px;
+  font-style: normal;
   text-align: center;
 }
 
-.timing__section::after {
+.timing__section::after,
+.sbor__guest::after,
+.kalendar::after .chat::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -140,6 +147,10 @@ dialog::backdrop {
 
 .timing__title {
   margin-block-start: 30px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 46px;
+  font-style: italic;
 }
 
 .element-animation {
@@ -154,8 +165,8 @@ dialog::backdrop {
 }
 
 .element-animation.element-show.singl::after {
-  transition:2s;
   right: -20%;
+  transition: 2s;
 }
 
 .timing__container {
@@ -200,19 +211,43 @@ dialog::backdrop {
   display: flex;
   flex-wrap: wrap;
   row-gap: 26px;
-  column-gap: 16px;
+  column-gap: 62px;
   margin-inline: 21px;
   margin-block-end: 60px;
+  padding-top: 23px;
+  padding-bottom: 45px;
 }
 
 .image__card {
   flex-grow: 1;
 }
 
+.image__card p {
+  display: flex;
+  align-items: center;
+}
+
 .image {
-  width: 100px;
-  height: 170px;
-  border-radius: 20px;
+  width: 101px;
+  height: 102px;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.image__card__man {
+  width: 101px;
+  height: 102px;
+  border-radius: 50px;
+  object-fit: cover;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.image__card__girl {
+  right: 1pxs;
+  width: 101px;
+  height: 102px;
+  border-radius: 50px;
   object-fit: cover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -386,7 +421,6 @@ label {
   border: none;
   border-radius: 3px;
   padding: 10px 9px;
-  outline: none;
   outline: 1px solid #000;
   color: #000;
   font-size: 14px;
@@ -462,4 +496,535 @@ label input[type="checkbox"] {
   color: var(--title-color);
   font-family: var(--font-text);
   font-weight: 600;
+}
+
+/* Modification */
+
+/* календарь */
+hr.underlining {
+  position: relative;
+  width: 330px;
+  height: 1px;
+  margin-top: 54px;
+  border: 0;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+hr.underlining__two {
+  position: relative;
+  width: 330px;
+  height: 1px;
+  margin-top: 54px;
+  border: 0;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.data {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.calendar {
+  width: 370px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 20px;
+  background: transparent;
+}
+
+.calendar__title {
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 14.28%;
+  height: 50px;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+th {
+  color: #333;
+  background-color: transparent;
+}
+
+td {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+td:hover {
+  background-color: #e0e0e0;
+}
+
+/* текст на картинке */
+.map-button {
+  position: absolute;
+  top: 447%;
+  display: inline-block;
+  align-self: center;
+  width: 176px;
+  height: 26px;
+  border-radius: 14px;
+  padding-top: 5px;
+  outline: 1px solid #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+div#tekst_sverhu_kartinki {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 428px;
+  margin-bottom: 20px;
+  background: url(../images/zags.webp), lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image__building {
+  width: 100%;
+}
+
+.city {
+  position: absolute;
+  top: 367%;
+  font-size: 24px;
+}
+
+.tekst_sverhu_kartinki {
+  position: absolute;
+  top: 1%;
+  left: 47px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 350px;
+  color: white;
+  font-family: var(--font-text), sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.location {
+  margin-top: 110px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 57px;
+  font-style: italic;
+}
+
+div#tekst_sverhu_kartinki__two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 466px;
+  margin: auto;
+  background: url(../images/building.webp), lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tekst_sverhu_kartinki__two {
+  position: absolute;
+  top: 0%;
+  left: 43px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 350px;
+  color: #000000;
+  font-family: var(--font-text), sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.map-button__two {
+  position: absolute;
+  top: 491%;
+  display: inline-block;
+  align-self: center;
+  width: 176px;
+  height: 26px;
+  border-radius: 14px;
+  padding-top: 5px;
+  outline: 1px solid #000000;
+  color: black;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.city__two {
+  position: absolute;
+  top: 73%;
+  color: black;
+  font-size: 24px;
+}
+/* соц.сети */
+.whatsapp {
+  position: relative;
+  top: 5px;
+  left: 8px;
+  width: 23px;
+}
+
+/* аудио */
+div.fixedbut {
+  position: fixed;
+  right: 20px;
+  bottom: 93%;
+  z-index: 999;
+  display: none;
+  border-radius: 10px;
+  padding: 6px 23px;
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  background: white;
+  -webkit-transition: 0.33s all ease-out;
+  -o-transition: 0.33s all ease-out;
+  transition: 0.33s all ease-out;
+}
+
+div.fixedbut:hover {
+  color: white;
+  background: grey;
+}
+
+.volume-button {
+  position: fixed; /* Фиксированное положение */
+  top: 20px; /* Отступ сверху */
+  right: 20px; /* Отступ справа */
+  z-index: 1;
+  margin-left: 10px; /* Отступ слева от кнопки */
+  border: none; /* Убираем рамку */
+  background-color: transparent; /* Прозрачный фон для кнопки */
+  cursor: pointer; /* Указываем, что элемент интерактивен */
+}
+
+.volume-button img {
+  z-index: 1;
+  width: 50px; /* Ширина изображения */
+  height: 50px; /* Высота изображения */
+}
+
+.volume-control {
+  align-items: center; /* Центрируем по вертикали */
+  margin-top: 20px;
+}
+
+.volume-control p {
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 14px; /* Размер текста */
+}
+
+/* сердце */
+.heart {
+  position: absolute;
+  width: 55px;
+  opacity: 0;
+  transition: opacity ease-in-out 1s, scale ease-in-out 7s;
+  scale: 1.5;
+}
+
+.heart.show {
+  opacity: 1;
+  scale: 1;
+}
+
+.kalendar__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  margin-left: 14px;
+}
+
+.pday {
+  position: relative;
+  z-index: 1;
+}
+
+.kalendar {
+  position: relative;
+  margin-top: 46px;
+  opacity: 30%;
+  background-color: #fff;
+}
+
+.sbor__guest {
+  position: relative;
+  opacity: 30%;
+  background-color: #fff;
+}
+
+.chat__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 30%;
+  background-color: #fff;
+}
+
+.chat__title {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+
+.chat__description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-inline: 26px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-optical-sizing: auto;
+}
+
+.tg__chat {
+  display: flex;
+  justify-content: center;
+  width: 101px;
+  height: 33px;
+  margin-top: 35px;
+  margin-bottom: 1px;
+  margin-left: 165px;
+  border-radius: 16px;
+  padding-top: 5px;
+  outline: 1px solid #000000;
+  color: black;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-style: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__bottom {
+  margin-bottom: 40px;
+}
+
+/* тайминги */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.event {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.event.left {
+  justify-content: flex-start;
+}
+
+.event.right {
+  justify-content: flex-end;
+}
+
+.circle {
+  position: absolute;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3498db;
+  transform: translateX(-50%);
+}
+
+.details {
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: transparent;
+}
+
+.details p {
+  margin: 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+  width: 2px;
+  background: #3498db;
+  transform: translateX(-50%);
+}
+
+/*.background-image {
+  background-image: url('/images/timer.jpg'); /* Замените 'your-image.jpg' на ваше изображение */
+/* background-size: cover;
+  min-height: 914px;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для удобочитаемости текста */
+/* min-height: 914px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; */
+/* }
+
+.text h3 {
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  font-family: var(--font-text), sans-serif;
+}
+
+.text h4 {
+  font-size: 48px;
+    margin: 10px 0;
+    color: white;
+    font-family: var(--font-text), sans-serif;
+    font-weight: 400;
+}
+
+.countdown {
+  font-size: 40px; 
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.countdown div {
+  margin: 0 10px; 
+} */
+
+/* , */
+
+.countdown-container {
+  position: relative;
+  width: 412px;
+  height: 473px;
+  overflow: hidden; /* Прячем элементы, которые могут выйти за границы */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обеспечивает покрытие всего контейнера изображением */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.countdown-title,
+.remaining-label,
+.countdown-timer {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.countdown-title {
+  top: 209px; /* Расположение заголовка */
+  padding-left: 117px;
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+.remaining-label {
+  top: 272px;
+  padding-left: 117px;
+  font-family: "ClassicaOne", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.countdown-timer {
+  top: 354px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 124px;
+}
+
+.time-block {
+  margin: 0 10px; /* Расстояние между блоками времени */
+}
+
+.time-number {
+  font-size: 30px;
+  color: white;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  color: white;
+}
+
+.divider {
+  height: 30px; /* Высота полоски, может быть изменена */
+  width: 2px; /* Ширина полоски */
+  background-color: #ccc; /* Цвет полоски */
+  align-self: center; /* Выравнивание по центру по высоте */
 }
