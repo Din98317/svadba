@@ -245,7 +245,7 @@ dialog::backdrop {
 }
 
 .image__card__girl {
-  right: 1pxs;
+  right: 1px;
   width: 101px;
   height: 102px;
   border-radius: 50px;
@@ -823,7 +823,6 @@ div.fixedbut:hover {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-optical-sizing: auto;
 }
 
 .tg__chat {
