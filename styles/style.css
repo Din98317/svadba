@@ -833,7 +833,6 @@ div.fixedbut:hover {
   height: 35px;
   margin-top: 35px;
   margin-bottom: 1px;
-  margin-left: 165px;
   border-radius: 16px;
   padding-top: 5px;
   outline: 1px solid #000000;
@@ -853,6 +852,8 @@ div.fixedbut:hover {
 
 .chat__bottom {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 /* тайминги */
