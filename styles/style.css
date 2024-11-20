@@ -742,9 +742,8 @@ div.fixedbut:hover {
 }
 
 .volume-button img {
-  z-index: 1;
-  width: 50px; /* Ширина изображения */
-  height: 50px; /* Высота изображения */
+  width: 40px;
+  height: 40px;
 }
 
 .volume-control {
@@ -754,7 +753,7 @@ div.fixedbut:hover {
 
 .volume-control p {
   color: rgb(0, 0, 0, 0.5);
-  font-size: 14px; /* Размер текста */
+  font-size: 13px; /* Размер текста */
 }
 
 /* сердце */
@@ -830,8 +829,8 @@ div.fixedbut:hover {
 .tg__chat {
   display: flex;
   justify-content: center;
-  width: 101px;
-  height: 33px;
+  width: 116px;
+  height: 35px;
   margin-top: 35px;
   margin-bottom: 1px;
   margin-left: 165px;
