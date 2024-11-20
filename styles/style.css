@@ -953,7 +953,7 @@ div.fixedbut:hover {
 
 .countdown-container {
   position: relative;
-  width: 412px;
+  width: 100%;
   height: 473px;
   overflow: hidden; /* Прячем элементы, которые могут выйти за границы */
 }
