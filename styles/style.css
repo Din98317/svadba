@@ -49,6 +49,7 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   font-family: var(--font-text);
+  margin-top: 66px;
 }
 
 .title__span {
