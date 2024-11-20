@@ -185,7 +185,8 @@ dialog::backdrop {
 
 .dress-code::after,
 .prompt__section::after,
-.location__section::after {
+.location__section::after,
+.countdown-container::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -629,7 +630,6 @@ div#tekst_sverhu_kartinki {
 .tekst_sverhu_kartinki {
   position: absolute;
   top: 1%;
-  left: 47px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -664,7 +664,6 @@ div#tekst_sverhu_kartinki__two {
 .tekst_sverhu_kartinki__two {
   position: absolute;
   top: 0%;
-  left: 43px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -750,7 +749,7 @@ div.fixedbut:hover {
 
 .volume-control {
   margin-top: 20px;
-  margin-right: 12px;
+  margin-right: 25px;
 }
 
 .volume-control p {
@@ -961,8 +960,13 @@ div.fixedbut:hover {
 .countdown-container {
   position: relative;
   width: 100%;
-  height: 473px;
-  overflow: hidden; /* Прячем элементы, которые могут выйти за границы */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../images/timer.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .background-image {
@@ -974,14 +978,13 @@ div.fixedbut:hover {
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
 
-.countdown-title,
-.remaining-label,
+.timer-title,
 .countdown-timer {
   position: absolute;
   width: 100%;
@@ -989,33 +992,39 @@ div.fixedbut:hover {
   text-align: center;
 }
 
-.countdown-title {
-  top: 209px; /* Расположение заголовка */
-  padding-left: 117px;
+.timer-title {
   font-family: "Great Vibes", sans-serif;
   font-weight: 400;
   font-size: 32px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 60px;
+  mix-blend-mode: hard-light;
+
 }
 
-.remaining-label {
-  top: 272px;
-  padding-left: 117px;
-  font-family: "ClassicaOne", sans-serif;
-  font-size: 32px;
-  text-align: center;
+.timer-title h2, .timer-title p {
+  mix-blend-mode: hard-light;
+  color: white;
 }
 
 .countdown-timer {
   top: 354px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-left: 124px;
+  justify-content: flex-end;
+
 }
 
 .time-block {
-  margin: 0 10px; /* Расстояние между блоками времени */
+  margin: 0 10px; /* Расстояние между 
+  блоками времени */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
 }
 
 .time-number {
@@ -1026,7 +1035,6 @@ div.fixedbut:hover {
 .label {
   display: block;
   font-size: 14px;
-  color: white;
 }
 
 .divider {
@@ -1034,4 +1042,9 @@ div.fixedbut:hover {
   width: 2px; /* Ширина полоски */
   background-color: #ccc; /* Цвет полоски */
   align-self: center; /* Выравнивание по центру по высоте */
+}
+
+.timer-block {
+  display:flex;
+  flex-direction: column;
 }
