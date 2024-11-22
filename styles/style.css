@@ -953,7 +953,7 @@ div.fixedbut:hover {
 }
 
 .svadba__building {
-  background-image: url(/images/zags.webp);
+  background-image: url(../images/zags.webp);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -988,7 +988,7 @@ div.fixedbut:hover {
 }
 
 .svadba__build {
-  background-image: url(/images/building.webp);
+  background-image: url(../images/building.webp);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -1030,4 +1030,12 @@ div.fixedbut:hover {
 .tamada {
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
+}
+
+.location__section {
+  position: relative;
+}
+
+.location__section__two {
+  position: relative;
 }
