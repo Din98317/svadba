@@ -133,9 +133,7 @@ dialog::backdrop {
   text-align: center;
 }
 
-.timing__section::after,
-.sbor__guest::after,
-.kalendar::after .chat::after {
+/* .timing__section::after, {
   content: "";
   position: absolute;
   z-index: -1;
@@ -143,7 +141,7 @@ dialog::backdrop {
   height: 100%;
   opacity: 30%;
   background-color: #fff;
-}
+} */
 
 .timing__title {
   margin-block-start: 30px;
@@ -184,9 +182,12 @@ dialog::backdrop {
 }
 
 .dress-code::after,
+
 .prompt__section::after,
+.sbor__guest::after,
 .location__section::after,
-.countdown-container::after {
+.kalendar::after,
+.chat::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -300,9 +301,9 @@ dialog::backdrop {
   text-align: left;
 }
 
-.number {
+/* .number {
   text-underline-position: under;
-}
+} */
 
 .location__container {
   display: flex;
@@ -584,127 +585,16 @@ td:hover {
   background-color: #e0e0e0;
 }
 
-/* текст на картинке */
-.map-button {
-  position: absolute;
-  top: 447%;
-  display: inline-block;
-  align-self: center;
-  width: 176px;
-  height: 26px;
-  border-radius: 14px;
-  padding-top: 5px;
-  outline: 1px solid #ffffff;
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-size: 13px;
-  font-style: normal;
-  text-decoration: none;
-  background-color: transparent;
-}
 
-div#tekst_sverhu_kartinki {
-  position: relative;
-    display: flex;
-    width: 100%;
-    height: 428px;
-    margin-bottom: 20px;
-    background: url(../images/zags.webp), lightgray;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.image__building {
-  width: 100%;
-}
-
-.city {
-  position: absolute;
-  top: 367%;
-  font-size: 24px;
-}
-
-.tekst_sverhu_kartinki {
-  position: absolute;
-  top: 1%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 350px;
-  color: white;
-  font-family: var(--font-text), sans-serif;
-  font-size: 32px;
-  text-align: center;
-}
-
-.location {
-  margin-top: 110px;
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-size: 57px;
-  font-style: italic;
-}
-
-div#tekst_sverhu_kartinki__two {
-  position: relative;
-    display: flex;
-    width: 100%;
-    height: 466px;
-    margin: auto;
-    background: url(../images/building.webp), lightgray;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tekst_sverhu_kartinki__two {
-  position: absolute;
-  top: 0%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 350px;
-  color: #000000;
-  font-family: var(--font-text), sans-serif;
-  font-size: 32px;
-  text-align: center;
-}
-
-.map-button__two {
-  position: absolute;
-  top: 491%;
-  display: inline-block;
-  align-self: center;
-  width: 176px;
-  height: 26px;
-  border-radius: 14px;
-  padding-top: 5px;
-  outline: 1px solid #000000;
-  color: black;
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-size: 13px;
-  font-style: normal;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.city__two {
-  position: absolute;
-  top: 73%;
-  color: black;
-  font-size: 24px;
-}
 /* соц.сети */
 .whatsapp {
+  position: relative;
+  top: 5px;
+  left: 8px;
+  width: 23px;
+}
+
+.phone__tamada {
   position: relative;
   top: 5px;
   left: 8px;
@@ -993,6 +883,7 @@ div.fixedbut:hover {
   width: 100%;
   color: white;
   text-align: center;
+  
 }
 
 .timer-title {
@@ -1031,12 +922,12 @@ div.fixedbut:hover {
 
 .time-number {
   color: white;
-  font-size: 30px;
+  font-size: 46px;
 }
 
 .label {
   display: block;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .divider {
@@ -1049,4 +940,94 @@ div.fixedbut:hover {
 .timer-block {
   display: flex;
   flex-direction: column;
+}
+
+
+/* текст на картинке */
+.location {
+  margin-block-start: 100px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 79px;
+  text-align: center;
+}
+
+.svadba__building {
+  background-image: url(/images/zags.webp);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.building__title {
+  display: flex;
+  flex-direction: column;
+  gap: 329px;
+  color: white;
+  font-size: 32px;
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 400;
+}
+
+.map-button {
+  border: 1px solid #fff;
+  width: 200px;
+  height: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Merriweather", serif;
+}
+
+.svadba__build {
+  background-image: url(/images/building.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    font-weight: 400;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+.build__title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 32px;
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 400;
+}
+
+.map-button__two {
+  border: 1px solid black;
+  width: 200px;
+  height: 25px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+}
+
+.tamada {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 400;
 }
