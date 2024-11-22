@@ -181,13 +181,13 @@ dialog::backdrop {
   font-size: 16px;
 }
 
-.dress-code::after,
-
-.prompt__section::after,
-.sbor__guest::after,
-.location__section::after,
 .kalendar::after,
-.chat::after {
+.sbor__guest::after,
+.dress-code::after,
+.prompt__section::after,
+.chat::after,
+.location__section::after,
+.location__section__two::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -975,7 +975,7 @@ div.fixedbut:hover {
 
 .map-button {
   border: 1px solid #fff;
-  width: 200px;
+  width: 215px;
   height: 25px;
   color: #fff;
   display: flex;
@@ -1014,7 +1014,7 @@ div.fixedbut:hover {
 
 .map-button__two {
   border: 1px solid black;
-  width: 200px;
+  width: 215px;
   height: 25px;
   color: black;
   display: flex;
