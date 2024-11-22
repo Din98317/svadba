@@ -17,32 +17,25 @@ body:has(dialog[open]) {
   min-height: 100%;
 }
 
-dialog {
-  bottom: 0px;
+.dialog {
   width: 100%;
-  border: none;
   background-image: url(../images/ring.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
   transition: opacity 2s ease-in-out;
-}
-
-dialog::backdrop {
-  position: fixed;
-  inset: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+  z-index:2 ;
 }
 
 .preview {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+gap: 20px;
 }
 
 .dialog__title {
