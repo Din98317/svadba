@@ -185,7 +185,7 @@ dialog::backdrop {
 .sbor__guest::after,
 .dress-code::after,
 .prompt__section::after,
-.chat::after,
+.chat__section::after,
 .location__section::after,
 .location__section__two::after {
   content: "";
@@ -681,7 +681,6 @@ div.fixedbut:hover {
   position: relative;
   margin-top: 46px;
   opacity: 30%;
-  background-color: #fff;
 }
 
 .sbor__guest {
