@@ -181,11 +181,11 @@ dialog::backdrop {
   font-size: 16px;
 }
 
-.kalendar::after,
-.sbor__guest::after,
+.kalendar,
+.sbor__guest,
 .dress-code::after,
 .prompt__section::after,
-.chat__section::after,
+.chat__section,
 .location__section::after,
 .location__section__two::after {
   content: "";
@@ -680,13 +680,11 @@ div.fixedbut:hover {
 .kalendar {
   position: relative;
   margin-top: 46px;
-  opacity: 30%;
   background-color: white;
 }
 
 .sbor__guest {
   position: relative;
-  opacity: 30%;
   background-color: #fff;
 }
 
@@ -695,7 +693,6 @@ div.fixedbut:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  opacity: 30%;
   background-color: #fff;
 }
 
