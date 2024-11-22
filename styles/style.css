@@ -681,6 +681,7 @@ div.fixedbut:hover {
   position: relative;
   margin-top: 46px;
   opacity: 30%;
+  background-color: white;
 }
 
 .sbor__guest {
@@ -1033,6 +1034,7 @@ div.fixedbut:hover {
 
 .location__section {
   position: relative;
+  background-color: white;
 }
 
 .location__section__two {
