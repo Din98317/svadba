@@ -398,8 +398,9 @@ label {
 }
 
 .phone {
-  margin-block-start: 10px;
+  margin-block-start: 5px;
   text-align: center;
+  width: 23px;
 }
 
 .block {
@@ -1014,9 +1015,21 @@ div.fixedbut:hover {
   cursor: pointer;
 }
 
-.tamada {
+.tamada_title {
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
+}
+
+.tamada {
+  display: flex;
+  width: 390px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soc__seti {
+  display: flex;
 }
 
 .location__section {
