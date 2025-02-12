@@ -400,7 +400,6 @@ label {
 .phone {
   margin-block-start: 5px;
   text-align: center;
-  width: 23px;
 }
 
 .block {
@@ -1026,6 +1025,10 @@ div.fixedbut:hover {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+
+.phone__tamada {
+  width: 23px;
 }
 
 .soc__seti {
