@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   max-width: 500px;
 }
@@ -482,7 +486,7 @@ label input[type="checkbox"] {
 }
 
 .close-button {
-  width: 70vw;
+  width: 55vw;
   margin-top: 74px;
   margin-bottom: 46px;
 }
