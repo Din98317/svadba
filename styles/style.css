@@ -210,7 +210,7 @@ body:has(dialog[open]) {
   row-gap: 26px;
   column-gap: 62px;
   margin-inline: 21px;
-  margin-block-end: 60px;
+  margin-block-end: 75px;
   padding-bottom: 45px;
 }
 
