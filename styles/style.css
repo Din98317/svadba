@@ -626,7 +626,7 @@ div.fixedbut:hover {
 .volume-button {
   position: fixed; /* Фиксированное положение */
   top: 20px; /* Отступ сверху */
-  right: 20px; /* Отступ справа */
+  right: 23px; /* Отступ справа */
   z-index: 1;
   margin-left: 10px; /* Отступ слева от кнопки */
   border: none; /* Убираем рамку */
