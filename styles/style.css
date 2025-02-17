@@ -145,7 +145,7 @@ body:has(dialog[open]) {
   margin-block-start: 30px;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 41px;
   font-style: italic;
 }
 
@@ -1003,7 +1003,7 @@ div.fixedbut:hover {
   color: white;
   font-family: "Great Vibes", sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 31px;
 }
 
 .map-button__two {
