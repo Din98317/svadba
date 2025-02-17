@@ -199,17 +199,18 @@ body:has(dialog[open]) {
 }
 
 .color__container {
-  margin-inline: 27px;
+  margin-top: 11px;
+  display: flex;
+  justify-content: center;
 }
 
 .image__containet {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 26px;
   column-gap: 62px;
   margin-inline: 21px;
   margin-block-end: 60px;
-  padding-top: 23px;
   padding-bottom: 45px;
 }
 
@@ -242,6 +243,7 @@ body:has(dialog[open]) {
   right: 1px;
   width: 101px;
   height: 102px;
+  margin-bottom: 234px;
   border-radius: 50px;
   object-fit: cover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -932,7 +934,7 @@ div.fixedbut:hover {
 
 /* текст на картинке */
 .location {
-  margin-block-start: 100px;
+  margin-block-start: 35px;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-size: 65px;
@@ -1021,10 +1023,16 @@ div.fixedbut:hover {
 
 .tamada {
   display: flex;
-  width: 390px;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  width: 390px;
+  margin-top: 15px;
+}
+
+.tamada__foto {
+  width: 200px;
+  margin-top: 15px;
 }
 
 .phone__tamada {
@@ -1033,6 +1041,8 @@ div.fixedbut:hover {
 
 .soc__seti {
   display: flex;
+  gap: 16px;
+  margin-top: 10px;
 }
 
 .location__section {
