@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   const video = document.getElementById('background-video');
-
-  
-  
 });
 
 // анимация скрола

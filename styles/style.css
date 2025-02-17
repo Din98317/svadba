@@ -13,6 +13,7 @@ body:has(dialog[open]) {
 .bgvideo {
   position: fixed;
   right: 0;
+  left: 0;
   bottom: 0;
   z-index: -1;
   width: auto;
@@ -941,7 +942,7 @@ div.fixedbut:hover {
   margin-block-start: 35px;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
-  font-size: 65px;
+  font-size: 63px;
   text-align: center;
 }
 
