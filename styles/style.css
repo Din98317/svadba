@@ -3,7 +3,6 @@
 } */
 
 body {
-  
 }
 
 body:has(dialog[open]) {
@@ -693,6 +692,7 @@ div.fixedbut:hover {
   flex-direction: column;
   gap: 30px;
   background-color: #fff;
+  z-index: 1;
 }
 
 .chat__title {
@@ -732,6 +732,7 @@ div.fixedbut:hover {
   font-style: normal;
   text-decoration: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .chat {
@@ -743,6 +744,18 @@ div.fixedbut:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: rgb(233, 150, 122);
 }
 
 /* тайминги */
