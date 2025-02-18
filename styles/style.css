@@ -1,9 +1,9 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 body {
-  max-width: 500px;
+  
 }
 
 body:has(dialog[open]) {
