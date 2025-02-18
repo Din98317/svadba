@@ -1031,8 +1031,9 @@ div.fixedbut:hover {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 350px;
+  /* width: 350px; */
   margin-top: 15px;
+  grid-column: 1 / 3;
 }
 
 .tamada__foto {
